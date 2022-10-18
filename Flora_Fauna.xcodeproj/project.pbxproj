@@ -14,6 +14,7 @@
 		0D28CF8E28FF28390023381B /* Flora_FaunaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D28CF8D28FF28390023381B /* Flora_FaunaTests.swift */; };
 		0D28CF9828FF28390023381B /* Flora_FaunaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D28CF9728FF28390023381B /* Flora_FaunaUITests.swift */; };
 		0D28CF9A28FF28390023381B /* Flora_FaunaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D28CF9928FF28390023381B /* Flora_FaunaUITestsLaunchTests.swift */; };
+		0D28CFA728FF28920023381B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D28CFA628FF28920023381B /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		0D28CF9328FF28390023381B /* Flora_FaunaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Flora_FaunaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D28CF9728FF28390023381B /* Flora_FaunaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flora_FaunaUITests.swift; sourceTree = "<group>"; };
 		0D28CF9928FF28390023381B /* Flora_FaunaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flora_FaunaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0D28CFA628FF28920023381B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				0D28CF7E28FF28380023381B /* ContentView.swift */,
 				0D28CF8028FF28390023381B /* Assets.xcassets */,
 				0D28CF8228FF28390023381B /* Preview Content */,
+				0D28CFA628FF28920023381B /* LoginView.swift */,
 			);
 			path = Flora_Fauna;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D28CFA728FF28920023381B /* LoginView.swift in Sources */,
 				0D28CF7F28FF28380023381B /* ContentView.swift in Sources */,
 				0D28CF7D28FF28380023381B /* Flora_FaunaApp.swift in Sources */,
 			);
