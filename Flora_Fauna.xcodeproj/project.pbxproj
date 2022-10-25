@@ -15,6 +15,13 @@
 		0D28CF9828FF28390023381B /* Flora_FaunaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D28CF9728FF28390023381B /* Flora_FaunaUITests.swift */; };
 		0D28CF9A28FF28390023381B /* Flora_FaunaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D28CF9928FF28390023381B /* Flora_FaunaUITestsLaunchTests.swift */; };
 		0D28CFA728FF28920023381B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D28CFA628FF28920023381B /* LoginView.swift */; };
+		0D28CFA9290761060023381B /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D28CFA8290761060023381B /* SignInView.swift */; };
+		0D28CFAB290761230023381B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D28CFAA290761230023381B /* HomeView.swift */; };
+		0D28CFAD2907613A0023381B /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D28CFAC2907613A0023381B /* MapView.swift */; };
+		0D28CFAF2907618B0023381B /* CycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D28CFAE2907618B0023381B /* CycleView.swift */; };
+		0D28CFB1290761A00023381B /* TeleHealthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D28CFB0290761A00023381B /* TeleHealthView.swift */; };
+		0D28CFB3290761B70023381B /* ForumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D28CFB2290761B70023381B /* ForumView.swift */; };
+		0D28CFB5290761DA0023381B /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D28CFB4290761DA0023381B /* WelcomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +53,13 @@
 		0D28CF9728FF28390023381B /* Flora_FaunaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flora_FaunaUITests.swift; sourceTree = "<group>"; };
 		0D28CF9928FF28390023381B /* Flora_FaunaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flora_FaunaUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0D28CFA628FF28920023381B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		0D28CFA8290761060023381B /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		0D28CFAA290761230023381B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		0D28CFAC2907613A0023381B /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		0D28CFAE2907618B0023381B /* CycleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CycleView.swift; sourceTree = "<group>"; };
+		0D28CFB0290761A00023381B /* TeleHealthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeleHealthView.swift; sourceTree = "<group>"; };
+		0D28CFB2290761B70023381B /* ForumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumView.swift; sourceTree = "<group>"; };
+		0D28CFB4290761DA0023381B /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +115,13 @@
 				0D28CF8028FF28390023381B /* Assets.xcassets */,
 				0D28CF8228FF28390023381B /* Preview Content */,
 				0D28CFA628FF28920023381B /* LoginView.swift */,
+				0D28CFA8290761060023381B /* SignInView.swift */,
+				0D28CFAA290761230023381B /* HomeView.swift */,
+				0D28CFAC2907613A0023381B /* MapView.swift */,
+				0D28CFAE2907618B0023381B /* CycleView.swift */,
+				0D28CFB0290761A00023381B /* TeleHealthView.swift */,
+				0D28CFB2290761B70023381B /* ForumView.swift */,
+				0D28CFB4290761DA0023381B /* WelcomeView.swift */,
 			);
 			path = Flora_Fauna;
 			sourceTree = "<group>";
@@ -261,7 +282,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D28CFA728FF28920023381B /* LoginView.swift in Sources */,
+				0D28CFAD2907613A0023381B /* MapView.swift in Sources */,
+				0D28CFB1290761A00023381B /* TeleHealthView.swift in Sources */,
 				0D28CF7F28FF28380023381B /* ContentView.swift in Sources */,
+				0D28CFB3290761B70023381B /* ForumView.swift in Sources */,
+				0D28CFB5290761DA0023381B /* WelcomeView.swift in Sources */,
+				0D28CFA9290761060023381B /* SignInView.swift in Sources */,
+				0D28CFAB290761230023381B /* HomeView.swift in Sources */,
+				0D28CFAF2907618B0023381B /* CycleView.swift in Sources */,
 				0D28CF7D28FF28380023381B /* Flora_FaunaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
