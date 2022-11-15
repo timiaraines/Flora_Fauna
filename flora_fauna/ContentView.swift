@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    
     @State private var pageIndex = 0
     private let pages: [Page] = Page.onboardingPages
     private let dotAppearance = UIPageControl.appearance()
@@ -20,7 +22,7 @@ struct ContentView: View {
                     OnboardingView(page: page)
                     Spacer()
                     if page == pages.last {
-                        Button("Sign up!", action: goToZero)
+                        Button("Next", action: goToZero)
                             .buttonStyle(.bordered)
                     } else {
                         Button("next", action: incrementPage)
@@ -52,5 +54,20 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+        
+    }
+}
+
+struct PrimaryButton: View {
+    var title: String
+    var body: some View {
+        Text(title)
+            .font(.title3)
+            .fontWeight(.bold)
+            .foregroundColor(.white)
+            .frame(maxWidth: .infinity)
+            .padding()
+            .background(Color("PrimaryColor"))
+            .cornerRadius(50)
     }
 }
