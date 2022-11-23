@@ -1,4 +1,4 @@
-//
+ //
 //  CustomDatePicker.swift
 //  flora_fauna
 //
@@ -56,9 +56,45 @@ struct CustomDatePicker: View {
                 ForEach(extractDate()){value in
                     
                     CardView(value:value)
-                    
+                        .background(
+                            Capsule()
+                                .fill(Color("PrimaryColor"))
+                                .padding(.horizontal , 8)
+                                .opacity(isSameDay(date1: value.date, date2: currentDate) ? 1 : 0)
+                        )
+                        .onTapGesture {
+                            currentDate = value.date
+                        }
                 }
             }
+            VStack(spacing: 15){
+                Text("Symptoms and Flow")
+                    .font(.title2.bold())
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.vertical, 20)
+                if let task = tasks.first(where: {task in
+                    return isSameDay(date1: task.taskDate, date2: currentDate)
+                }){
+                    ForEach(task.task){task in
+                        VStack(alignment: .leading, spacing: 10){
+                            Text(task.time
+                                .addingTimeInterval(CGFloat.random(in:0...5000)), style: .time)
+                            Text(task.title)
+                                .font(.title2.bold())
+                        }
+                        .padding(.vertical, 10)
+                        .padding(.horizontal)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .background(
+                        Color("Peach")
+                            .opacity(0.5)
+                            .cornerRadius(10)
+                        )
+                    }
+                }
+            }
+            .padding()
+            .padding(.top, 25)
         }
         .onChange(of: currentMonth){ newvalue in
             currentDate = getCurrentMonth()
@@ -69,12 +105,38 @@ struct CustomDatePicker: View {
     func CardView(value: DateValue)->some View{
         VStack{
             if value.day != -1{
-                Text("\(value.day)")
-                    .font(.title3.bold())
+                if let task = tasks.first(where: {task in
+                    return isSameDay(date1: task.taskDate, date2: value.date)
+                }){
+                    Text("\(value.day)")
+                        .font(.title3.bold())
+                        .foregroundColor(isSameDay(date1: task.taskDate, date2: currentDate) ? .white : .primary)
+                        .frame(maxWidth: .infinity)
+
+                    Spacer()
+                    Circle()
+                        .fill(isSameDay(date1: task.taskDate, date2: currentDate ) ? .white : Color("Pink"))
+                        .frame(width: 8, height: 8)
+                    
+                }
+                else{
+                    Text("\(value.day)")
+                        .font(.title3.bold())
+                        .foregroundColor(isSameDay(date1: value.date, date2: currentDate) ? .white : .primary)
+                        .frame(maxWidth: .infinity)
+
+                    Spacer()
+                }
             }
         }
         .padding(.vertical, 8)
         .frame(height: 60, alignment: .top)
+    }
+    
+    func isSameDay(date1: Date, date2: Date)->Bool{
+        let calendar = Calendar.current
+        
+        return calendar.isDate(date1, inSameDayAs: date2)
     }
     
     func extraDate()->[String]{
@@ -110,7 +172,8 @@ struct CustomDatePicker: View {
         }
         
         let firstWeekday = calendar.component(.weekday, from: days.first?.date ?? Date())
-        for _ in 0 ..<firstWeekday - 1{
+        
+        for _ in 0..<firstWeekday - 1{
             days.insert(DateValue(day: -1, date: Date()), at: 0)
         }
         return days
@@ -119,7 +182,7 @@ struct CustomDatePicker: View {
 
 struct CustomDatePicker_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        MainView()
     }
 }
 

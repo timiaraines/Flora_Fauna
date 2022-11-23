@@ -39,6 +39,6 @@ struct MessageBubble: View {
 
 struct MessageBubble_Previews: PreviewProvider {
     static var previews: some View {
-        MessageBubble(message: Message(id: "12345", text: "I've been coding applications from scratch in SwiftUI and it's so much fun!", received: true, timestamp: Date()))
+        MessageBubble(message: Message(id: "12345", text: "Is it normal for your cycle to be irregular while on birth control?", received: true, timestamp: Date()))
     }
 }

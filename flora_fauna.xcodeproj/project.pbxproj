@@ -18,6 +18,11 @@
 		0D56325C2912D8CF00A1E78A /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D56325B2912D8CF00A1E78A /* OnboardingView.swift */; };
 		0D56325F2912F39D00A1E78A /* MapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D56325E2912F39D00A1E78A /* MapModel.swift */; };
 		0D5632612912F4CA00A1E78A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5632602912F4CA00A1E78A /* MapView.swift */; };
+		0D94D521292CE76F0013BFCF /* TabNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D94D520292CE76F0013BFCF /* TabNav.swift */; };
+		0D94D523292CE9A60013BFCF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D94D522292CE9A60013BFCF /* MainView.swift */; };
+		0D94D525292CEF7F0013BFCF /* CustomCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D94D524292CEF7F0013BFCF /* CustomCorner.swift */; };
+		0D94D529292CFD4B0013BFCF /* CycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D94D528292CFD4B0013BFCF /* CycleView.swift */; };
+		0D94D52B292CFD5C0013BFCF /* CustomDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D94D52A292CFD5C0013BFCF /* CustomDatePicker.swift */; };
 		0DAF5C7C291C4E25003661C3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0DAF5C7B291C4E25003661C3 /* GoogleService-Info.plist */; };
 		0DC49419291AB9230076DCFD /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC49418291AB9230076DCFD /* LoginView.swift */; };
 		0DC4941B291AC2BA0076DCFD /* GetStartedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC4941A291AC2BA0076DCFD /* GetStartedView.swift */; };
@@ -75,6 +80,11 @@
 		0D56325D2912F32800A1E78A /* flora-fauna-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "flora-fauna-Info.plist"; sourceTree = SOURCE_ROOT; };
 		0D56325E2912F39D00A1E78A /* MapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModel.swift; sourceTree = "<group>"; };
 		0D5632602912F4CA00A1E78A /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		0D94D520292CE76F0013BFCF /* TabNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabNav.swift; sourceTree = "<group>"; };
+		0D94D522292CE9A60013BFCF /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		0D94D524292CEF7F0013BFCF /* CustomCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCorner.swift; sourceTree = "<group>"; };
+		0D94D528292CFD4B0013BFCF /* CycleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CycleView.swift; sourceTree = "<group>"; };
+		0D94D52A292CFD5C0013BFCF /* CustomDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDatePicker.swift; sourceTree = "<group>"; };
 		0DAF5C7B291C4E25003661C3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0DC49418291AB9230076DCFD /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		0DC4941A291AC2BA0076DCFD /* GetStartedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedView.swift; sourceTree = "<group>"; };
@@ -152,8 +162,6 @@
 				0D56325D2912F32800A1E78A /* flora-fauna-Info.plist */,
 				0D56323B2912C1BF00A1E78A /* Extensions */,
 				0D56323D2912C1DB00A1E78A /* Models */,
-				0D56323E2912C1E700A1E78A /* Services */,
-				0D56323F2912C1F000A1E78A /* Utilities */,
 				0D56323C2912C1D100A1E78A /* Views */,
 				0D56322D2912C01500A1E78A /* flora_faunaApp.swift */,
 				0D56322F2912C01500A1E78A /* ContentView.swift */,
@@ -176,6 +184,7 @@
 			children = (
 				0D56324F2912C9FA00A1E78A /* Color.swift */,
 				0DC49473291C3F7A0076DCFD /* Extension.swift */,
+				0D94D524292CEF7F0013BFCF /* CustomCorner.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -202,22 +211,9 @@
 				0DC49426291C02890076DCFD /* DateValue.swift */,
 				0DC4942A291C39090076DCFD /* Task.swift */,
 				0DC4942C291C3A3E0076DCFD /* Message.swift */,
+				0D94D520292CE76F0013BFCF /* TabNav.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		0D56323E2912C1E700A1E78A /* Services */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
-		0D56323F2912C1F000A1E78A /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Utilities;
 			sourceTree = "<group>";
 		};
 		0D5632422912C26100A1E78A /* Launch */ = {
@@ -231,6 +227,9 @@
 		0D5632432912C26D00A1E78A /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				0D94D52A292CFD5C0013BFCF /* CustomDatePicker.swift */,
+				0D94D528292CFD4B0013BFCF /* CycleView.swift */,
+				0D94D522292CE9A60013BFCF /* MainView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -403,15 +402,20 @@
 				0DC4942D291C3A3E0076DCFD /* Message.swift in Sources */,
 				0DC49419291AB9230076DCFD /* LoginView.swift in Sources */,
 				0DC4941F291BEB170076DCFD /* ProfileView.swift in Sources */,
+				0D94D525292CEF7F0013BFCF /* CustomCorner.swift in Sources */,
 				0DC49427291C02890076DCFD /* DateValue.swift in Sources */,
 				0D5632572912D07000A1E78A /* LaunchView.swift in Sources */,
 				0DC49433291C3AE10076DCFD /* MessageBubble.swift in Sources */,
 				0DC4941D291ACD080076DCFD /* SignUpView.swift in Sources */,
+				0D94D521292CE76F0013BFCF /* TabNav.swift in Sources */,
 				0D56325C2912D8CF00A1E78A /* OnboardingView.swift in Sources */,
 				0DC49474291C3F7A0076DCFD /* Extension.swift in Sources */,
 				0D56325F2912F39D00A1E78A /* MapModel.swift in Sources */,
+				0D94D529292CFD4B0013BFCF /* CycleView.swift in Sources */,
 				0D5632502912C9FA00A1E78A /* Color.swift in Sources */,
+				0D94D52B292CFD5C0013BFCF /* CustomDatePicker.swift in Sources */,
 				0D56322E2912C01500A1E78A /* flora_faunaApp.swift in Sources */,
+				0D94D523292CE9A60013BFCF /* MainView.swift in Sources */,
 				0DC4941B291AC2BA0076DCFD /* GetStartedView.swift in Sources */,
 				0DC49470291C3ECF0076DCFD /* MessagesManager.swift in Sources */,
 				0DC4942B291C39090076DCFD /* Task.swift in Sources */,

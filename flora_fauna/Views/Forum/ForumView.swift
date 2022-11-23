@@ -31,11 +31,12 @@ struct ForumView: View {
                            }
                        }
                    }
+                   MessageField()
+                       .environmentObject(messagesManager)
                }
                .background(Color("Peach"))
                
-               MessageField()
-                   .environmentObject(messagesManager)
+               
            }
        }
    }

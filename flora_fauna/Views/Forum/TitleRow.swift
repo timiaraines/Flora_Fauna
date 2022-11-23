@@ -32,11 +32,6 @@ struct TitleRow: View {
             }
             .frame(maxWidth: .infinity, alignment: .leading)
             
-            Image(systemName: "phone.fill")
-                .foregroundColor(.gray)
-                .padding(10)
-                .background(.white)
-                .cornerRadius(50)
         }
         .padding()
     }
