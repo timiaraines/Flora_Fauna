@@ -33,6 +33,7 @@ struct ForumView: View {
                    }
                    MessageField()
                        .environmentObject(messagesManager)
+                       .padding(.bottom, 80)
                }
                .background(Color("Peach"))
                

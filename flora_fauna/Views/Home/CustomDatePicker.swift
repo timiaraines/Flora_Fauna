@@ -67,11 +67,11 @@ struct CustomDatePicker: View {
                         }
                 }
             }
-            VStack(spacing: 15){
+            VStack(spacing: 5){
                 Text("Symptoms and Flow")
                     .font(.title2.bold())
                     .frame(maxWidth: .infinity, alignment: .leading)
-                    .padding(.vertical, 20)
+                    .padding(.vertical, 0)
                 if let task = tasks.first(where: {task in
                     return isSameDay(date1: task.taskDate, date2: currentDate)
                 }){
@@ -91,6 +91,8 @@ struct CustomDatePicker: View {
                             .cornerRadius(10)
                         )
                     }
+                }else{
+                    Text("No cycle data")
                 }
             }
             .padding()

@@ -31,5 +31,17 @@ var tasks: [TaskMetaData] = [
     TaskMetaData(task: [
         Task(title: "Start of cycle."),
         Task(title: "End of cycle.")
-    ], taskDate: getSampleDate(offset: 1))
+    ], taskDate: getSampleDate(offset: 1)),
+    
+    TaskMetaData(task: [
+        
+        Task(title: "Start of cycle."),
+        Task(title: "End of cycle.")
+        
+    ], taskDate: getSampleDate(offset: -3)),
+    
+    TaskMetaData(task: [
+        Task(title: "Start of cycle."),
+        Task(title: "End of cycle.")
+    ], taskDate: getSampleDate(offset: -8))
     ]
