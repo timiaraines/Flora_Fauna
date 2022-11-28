@@ -18,7 +18,7 @@ struct MainView: View {
             TabView(selection: $currentTab){
                 CycleView()
                     .tag(Tab.home)
-                Text("Video")
+                VideoView()
                     .tag(Tab.video)
                 ForumView()
                     .tag(Tab.message)

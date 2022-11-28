@@ -47,7 +47,21 @@ struct LoginView: View {
                         .shadow(color: Color.black.opacity(0.08), radius: 60, x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: 16)
                         .padding(.vertical)
                     
-                    PrimaryButton(title: "Sign In")
+                    NavigationLink(
+                        destination: MainView().navigationBarHidden(true),
+                        label: {
+                            Text("Sign In")
+                                .font(.title3)
+                                .fontWeight(.bold)
+                                .foregroundColor(Color.white)
+                                .padding()
+                                .frame(maxWidth: .infinity)
+                                .background(Color("PrimaryColor"))
+                                .cornerRadius(50.0)
+                                .shadow(color: Color.black.opacity(0.08), radius: 60, x: 0.0, y: 16)
+                                .padding(.vertical)
+                        })
+                        .navigationBarHidden(true)
                     
                 }
                 

@@ -90,17 +90,21 @@ struct SignUpView: View {
             .padding(.top, 25)
             
             
-            Button(action: {
-                
-            }) {
-                
-                Text("    SIGN UP              ")
-                    .foregroundColor(.white)
-                    .background(Color("PrimaryColor"))
-                    .fontWeight(.bold)
-    
-                
-            }
+            NavigationLink(
+                destination: MainView().navigationBarHidden(true),
+                label: {
+                    Text("Sign Up")
+                        .font(.title3)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color.white)
+                        .padding()
+                        .frame(maxWidth: .infinity)
+                        .background(Color("PrimaryColor"))
+                        .cornerRadius(50.0)
+                        .shadow(color: Color.black.opacity(0.08), radius: 60, x: 0.0, y: 16)
+                        .padding(.vertical)
+                })
+                .navigationBarHidden(true)
             .cornerRadius(50.0)
             .shadow(color: Color.black.opacity(0.08), radius: 60, x: 0.0, y: 16)
             .frame(minWidth: 0, maxWidth: .infinity)
