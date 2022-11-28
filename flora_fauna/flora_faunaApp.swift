@@ -13,10 +13,12 @@ struct flora_faunaApp: App {
     init() {
         FirebaseApp.configure()
     }
+    
+    let persistenceController = PersistenceController.shared
     var body: some Scene {
         WindowGroup {
-            LaunchView()
-           
+            ContentView()
+                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }

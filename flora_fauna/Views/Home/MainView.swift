@@ -16,7 +16,7 @@ struct MainView: View {
     var body: some View {
         ZStack(alignment: .bottom){
             TabView(selection: $currentTab){
-                CycleView()
+                Home()
                     .tag(Tab.home)
                 VideoView()
                     .tag(Tab.video)

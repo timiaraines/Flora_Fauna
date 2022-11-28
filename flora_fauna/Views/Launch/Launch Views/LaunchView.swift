@@ -15,7 +15,7 @@ struct LaunchView: View {
     // Customise your SplashScreen here
     var body: some View {
         if isActive {
-            ContentView()
+            GetStartedView()
         } else {
             VStack {
                 VStack {
@@ -44,6 +44,7 @@ struct LaunchView: View {
             }
         }
     }
+    
 }
 
 struct LaunchView_Previews: PreviewProvider {
